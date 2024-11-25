@@ -1,0 +1,17 @@
+{
+  "name": "using-ts-in-node",
+  "version": "1.0.0",
+  "description": "Using TypeScript to write Node Code",
+  "private": true,
+  "scripts": {
+    "compile": "tsc -w"
+  },
+  "author": "Manish Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.9.5"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.1"
+  }
+}

@@ -1,0 +1,33 @@
+extend ../layout
+
+block pagecontent
+    .row 
+        .col-sm-2 
+            button.btn.btn-primary.btn-block#btnLoad Load Employees
+        .col-sm-10 
+            table.table.table-hover.table-striped 
+                thead 
+                    tr 
+                        th ID 
+                        th NAME 
+                        th 
+                        th ACTIONS 
+                        th 
+                tbody#t_body
+
+block pagescripts
+    script#employeeRowTemplate(type="text/x-jsrender")
+        <tr>
+            <td>{{:id}}</td>
+            <td>{{:name}}</td>
+            <td>
+                <a class="text-info" href="#">Details</a>
+            </td>
+            <td>
+                <a class="text-warning" href="#">Edit</a>
+            </td>
+            <td>
+                <a class="text-danger" href="#">Delete</a>
+            </td>
+        </tr>
+    script(src="/javascripts/client-app.js")
